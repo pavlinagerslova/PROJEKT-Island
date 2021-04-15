@@ -96,7 +96,6 @@ header p:nth-of-type(2)::before
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "Raleway", sans-serif;
-	opacity: 0.8;
 }
 
 .paragraph
@@ -169,7 +168,7 @@ footer a
 	color: gray;
 }
 
-@media screen and (min-width: 600px)
+@media screen and (min-width: 540px)
 {
 	header p:nth-of-type(2)::before
 	{
@@ -207,7 +206,6 @@ footer a
 		text-decoration: none;
 		text-transform: uppercase;
 		font-family: "Raleway", sans-serif;
-		opacity: 0.8;
 	}
 
 	h2::after
@@ -221,7 +219,9 @@ footer a
 	}
 
 	.solo-photo-description,
-	.solo-photo-description a
+	.solo-photo-description a,
+	.photogalery p,
+	.photogalery a
 	{
 		color: white;
 	}
@@ -232,6 +232,17 @@ footer a
 		position: absolute;
 		right: 15px;
 		bottom: 15px;
+	}
+
+	.photo-description
+	{
+		margin: 0;
+		position: absolute;
+		overflow: hidden;
+		white-space: nowrap;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
 	}
 
 	.photogalery
@@ -276,8 +287,7 @@ footer a
 		bottom: 0;
 		left: 0;
 		right: 0;
-		background-color: #050505;
-		opacity: 0.7;
+		background-color: rgba(5, 5, 5, 0.7);
 		overflow: hidden;
 		width: 100%;
 		height: 0;
@@ -286,27 +296,11 @@ footer a
 
 	  .img-hover:hover .overlay 
 	  {
-		height: 40%;
-	  }
-
-	  /* .photo-description
-	  { 
-		white-space: nowrap;
-		position: absolute;
-		overflow: hidden;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-	  } */
-
-	  .photo-description,
-	  .photo-description a 
-	  {
-		  color: white;
+		height: 30%;
 	  }
 }
 
-@media screen and (min-width: 1000px)
+@media screen and (min-width: 960px)
 {
 	main
 	{	background-color: #f5f5f5;
